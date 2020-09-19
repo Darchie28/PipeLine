@@ -1,0 +1,2 @@
+aws s3 rm "s3://${OldPipelineID}" --recursive
+aws cloudformation delete-stack --stack-name "${PreviousPipelineID}"
